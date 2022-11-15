@@ -920,13 +920,13 @@ a{
     left: -100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #3d4055;
+    background-color: #000000;
     z-index: 20000;
     transition: left .8s cubic-bezier(.1,.1,.1,.1),right .8s cubic-bezier(.1,.1,.1,.1);
     width: 100%;
 }
 .navbar .navmenu.active .top-em-link a.text-gray {
-    color: #a7a6a6 !important;
+    color: #ffffff !important;
 }
 .navbar .navmenu.active .top-em-link a.text-white{
     color: #fff!important;
@@ -949,7 +949,7 @@ a{
     line-height: initial;
     text-align: center;
     font-size: 25px;
-    color: var(--header-font-color);
+    color:  #09C4C4!important;
     cursor: pointer;
     transition: all .3s ease;
 }
@@ -987,7 +987,7 @@ a{
         padding: 5px 15px;
         width: 100%;
         margin-right: 0;
-        color: #2a2d43 !important;
+        color: #ffffff !important;
         /*border-bottom: 1px solid #09C4C4;*/
     }
     /* career details */
