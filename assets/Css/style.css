@@ -141,7 +141,9 @@ a{
     padding-top: 20px;
     padding-bottom: 80px;
 }
-
+.header .nav-item span {
+    color: #09C3C3;
+}
 .header .header_logo {
     width: 205px;
 }
@@ -175,7 +177,12 @@ a{
 .header .navbar .navmenu .mobile-menu {
     display: none;
 }
-
+.header .mobile-menu img{
+    filter: invert(1);
+}
+.header .mobile-menu li a{
+    color: #fff;
+}
 /* Index */
 
 .index-page .header {
@@ -804,6 +811,10 @@ a{
     .sc_business .content {
         width: unset;
     }
+    .sc_contactother {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }  
 @media only screen and (max-width: 1200px) {  
     .container-fluids {
@@ -819,7 +830,7 @@ a{
         margin: 0 0;
     }
     .side-cus-padding {
-        padding: 0 0;
+        padding: 0 20px;
      }
      .p-tb-space .side-cus-padding {
         text-align: center;
@@ -920,13 +931,13 @@ a{
     left: -100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #000000;
+    background-color: #292929;
     z-index: 20000;
     transition: left .8s cubic-bezier(.1,.1,.1,.1),right .8s cubic-bezier(.1,.1,.1,.1);
     width: 100%;
 }
 .navbar .navmenu.active .top-em-link a.text-gray {
-    color: #ffffff !important;
+    color: #a7a6a6 !important;
 }
 .navbar .navmenu.active .top-em-link a.text-white{
     color: #fff!important;
@@ -949,7 +960,7 @@ a{
     line-height: initial;
     text-align: center;
     font-size: 25px;
-    color:  #09C4C4!important;
+    color: #09C4C4!important;
     cursor: pointer;
     transition: all .3s ease;
 }
@@ -987,8 +998,11 @@ a{
         padding: 5px 15px;
         width: 100%;
         margin-right: 0;
-        color: #ffffff !important;
+        color: #fff !important;
         /*border-bottom: 1px solid #09C4C4;*/
+    }
+    .header .nav-item span {
+        color: #fff;
     }
     /* career details */
     .sc_form label {
@@ -1057,6 +1071,19 @@ a{
 }
 
 @media only screen and (max-width: 767px) {
+    .side-cus-padding {
+        font-size: 16px;
+    }
+    .sc_contactother {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .p-tb-space .our-ct-img-box {
+        margin: 0;
+    }
+    .p-tb-space .our-ct-text-box {
+        margin: 0;
+    }
     .bb-index-bg {
         padding: 100px 0px 50px;
     }
@@ -1124,6 +1151,9 @@ a{
     }
     h1 {
         font-size: 35px;
+    }
+    h2 {
+        font-size: 30px;
     }
     h3 {
         font-size: 28px;
@@ -1221,6 +1251,19 @@ a{
 }
 
 @media only screen and (max-width: 576px) {
+    .sc_ideas p {
+        font-size: 16px;
+    }
+    .sc_technology p {
+        font-size: 16px;
+    }
+    .bb-index-bg {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .side-cus-padding {
+            padding: 0px;
+        }
     .container-fluids {
         padding: 20px;
     }
@@ -1257,6 +1300,7 @@ a{
     /* Team */
     .sc_team {
         margin-top: 0px;
+        padding: 0 20px;
     }
     /* career */
     .sc_executive .btn {
@@ -1274,6 +1318,10 @@ a{
     }
 
     /* contact us */
+    .sc_contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .sc_contact_form .fresher{
         font-size: 14px;
         padding: 6px 10px;
@@ -1293,10 +1341,12 @@ a{
     .sc_contactother {
         padding-top: 40px;
         padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .sc_contact_form {
         padding-top: 40px;
-        padding: 15px;
+        padding: 20px;
     }
     /* .sc_contact_form .about_work {
         align-items: baseline;
@@ -1309,7 +1359,48 @@ a{
     .b-sm-title {
         font-size: 12px;
     }
-
+    .p-tb-space .box_space {
+        padding: 0;
+    }
+    .sc_ideas {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sc_our {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sc_experience {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sc_culture {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+    .sc_technology {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+    .p-tb-space {
+        padding: 30px 20px;
+    }
+    .sc_work_together {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+    .sc_tool {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+    .sc_hiring {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+    .sc_executive {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
 }
 @media only screen and (max-width: 450px) { 
     
@@ -1383,6 +1474,9 @@ a{
     }
 }
 @media(max-width: 991px) {
+    .container-fluid {
+        padding: 0px 20px;
+    }
     .line-up-col{
         padding-bottom: 15px;
     }
@@ -1394,6 +1488,15 @@ a{
     }
 }
 @media(max-width: 767px) {
+    .sc_work .portfolio_sec h4 {
+        font-size: 18px;
+    }
+    .sc_work .portfolio_sec p {
+        font-size: 16px;
+    }
+    .testimonial-item p {
+        font-size: 16px;
+    }
     .line-up-col-left{
             padding-left: 12px;
     }

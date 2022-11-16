@@ -10,6 +10,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/Css/style.css">
 </head>
@@ -21,7 +23,7 @@
             <div class="row align-items-baseline">
                 <div class="col-lg-3 col-md-6 col-6">
                     <div class="header_logo">
-                        <a href="index.html"><img src="./assets/Images/logo.svg" width="100%"/></a>
+                        <a href="../work/index.html"><img src="./assets/Images/logo.svg" width="100%"/></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-6 d-flex justify-content-end">
@@ -32,33 +34,31 @@
                             </button>
                             <div class="navmenu">
                                 <div class="mobile-menu">
-                                    
-                                   <!--  <div class="header_logo">
-                                        <a href="index.html"><img src="./assets/Images/logo.svg" width="100%"/></a>
-                                    </div> -->
-                                    <span class="navigation-body-close-button text-danger">✕</span>
+                                    <div class="header_logo">
+                                        <a href="./index.html"><img src="./assets/Images/logo.svg" width="100%"/></a>
+                                    </div>
+                                    <span class="navigation-body-close-button">✕</span>
                                 </div>
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="aboutus.html">About Us</a>
+                                        <a class="nav-link" href="./aboutus.html">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link " href="portfolios.html">Portfolio</a>
+                                        <a class="nav-link " href="./portfolios.html">Portfolio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link " href="career.html">Career <span class="me-3">We’r Hiring!</span></a>
-                                    </li>
+                                        <a class="nav-link active" href="./career.html">Career <span class="ms-3">We’r Hiring!</span></a>                                    </li>
                                     <!-- <li class="nav-item">
                                         <a class="nav-link " href="#">We’r Hiring!</a>
                                     </li> -->
                                     <li class="nav-item">
-                                        <a class="nav-link " href="contactus.html">Contact</a>
+                                        <a class="nav-link " href="./contactus.html">Contact</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="team.html">Team</a>
+                                        <a class="nav-link " href="./team.html">Team</a>
                                     </li> 
                                     <!-- <div class="buttonBox position-relative d-inline-flex">
                                         <button class="btn-style"><img src="./assets/Images/arrow_right.png"> Get Started </span></button>
@@ -66,14 +66,13 @@
                                         <div class="border-class"></div>
                                     </div>                                    -->
                                 </ul>
-                                
                             </div>
                         </div>
                     </nav>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6 d-flex justify-content-end">
                     <div class="header_btn">
-                        <button class="btn"><a href="contactus.html">Let’s Talk</a><img src="./assets/Images/right_arrow.png" class="ms-3" width="14px"/></button>
+                        <button class="btn"><a href="./contactus.html">Let’s Talk</a><img src="./assets/Images/right_arrow.png" class="ms-3" width="14px"/></button>
                     </div>
                 </div>
             </div>
@@ -81,7 +80,7 @@
     </section>
    
    
-    <section class="sc_hiring">
+    <section class="sc_hiring" data-aos="fade-up" data-aos-duration="3000">
         <div class="container"> 
             <div class="row justify-content-center text-center">
                 <div class="d-flex justify-content-center text-center">
@@ -98,7 +97,7 @@
         </div>
     </section>
 
-    <section class="sc_executive">
+    <section class="sc_executive" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-lg-5 mb-3">
@@ -115,7 +114,7 @@
                                 <p>Full-Time</p>
                             </div>
                         </div>
-                        <button class="btn btn-black"><a href="career-details.html">Apply Now</a></button>
+                        <button class="btn btn-black"><a href="../work/career.html">Apply Now</a></button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-lg-5 mb-3">
@@ -132,7 +131,7 @@
                                 <p>Full-Time</p>
                             </div>
                         </div>
-                        <button class="btn btn-black"><a href="career-details.html">Apply Now</a></button>
+                        <button class="btn btn-black"><a href="../work/career.html">Apply Now</a></button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-lg-5 mb-3">
@@ -149,7 +148,7 @@
                                 <p>Full-Time</p>
                             </div>
                         </div>
-                        <button class="btn btn-black"><a href="career-details.html">Apply Now</a></button>
+                        <button class="btn btn-black"><a href="../work/career.html">Apply Now</a></button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-lg-5 mb-3">
@@ -166,7 +165,7 @@
                                 <p>Full-Time</p>
                             </div>
                         </div>
-                        <button class="btn btn-black"><a href="career-details.html">Apply Now</a></button>
+                        <button class="btn btn-black"><a href="../work/career.html">Apply Now</a></button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-lg-5 mb-3">
@@ -183,7 +182,7 @@
                                 <p>Full-Time</p>
                             </div>
                         </div>
-                        <button class="btn btn-black"><a href="career-details.html">Apply Now</a></button>
+                        <button class="btn btn-black"><a href="../work/career.html">Apply Now</a></button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-lg-5 mb-3">
@@ -200,14 +199,14 @@
                                 <p>Full-Time</p>
                             </div>
                         </div>
-                        <button class="btn btn-black"><a href="career-details.html">Apply Now</a></button>
+                        <button class="btn btn-black"><a href="../work/career.html">Apply Now</a></button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="sc_culture">
+    <section class="sc_culture" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="d-flex justify-content-center text-center">
@@ -251,7 +250,7 @@
         </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" data-aos="fade-up" data-aos-duration="3000">
         <div class="container footer_bg" style="background-image: url(assets/Images/footer-map.png);">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-lg-0 mb-md-5 mb-5">
@@ -259,11 +258,11 @@
                     <p class="footer_content">236, Tulsi Arcade, Sudama Chowk,Mota Varachha, Surat.-394101</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-lg-0 mb-md-5 mb-3">
-                    <p><a href="index.html">Home</a></p>
-                    <p><a href="aboutus.html">About Us</a></p>
-                    <p><a href="portfolios.html">Portfolio</a></p>
-                    <p><a href="career.html">Career</a></p>
-                    <p><a href="contactus.html">Contact</a></p>
+                    <p><a href="./index.html">Home</a></p>
+                    <p><a href="./aboutus.html">About Us</a></p>
+                    <p><a href="./portfolios.html">Portfolio</a></p>
+                    <p><a href="./career.html">Career</a></p>
+                    <p><a href="./contactus.html">Contact</a></p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-lg-0 mb-md-5 mb-3">
                     <p><img src="./assets/Images/facebook.png" class="me-3"/><a href="#">Facebook</a></p>
@@ -309,6 +308,7 @@
                 jQuery('.nav-link').removeClass('active');
                 jQuery(this).addClass('active');
             });
+            AOS.init();
         });
     
     </script>
