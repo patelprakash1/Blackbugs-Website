@@ -101,8 +101,9 @@ a{
     font-size: 16px;
 }
 .btn:hover {
-    background: #09a6c3 !important;
+    background: #292929 !important;
     color: #fff;
+    transition: all 0.5s ;
 }
 .btn:focus {
     background: #09C3C3;
@@ -186,14 +187,14 @@ a{
 /* Index */
 
 .index-page .header {
-    position: absolute;
+    position: unset;
     left: 0;
     right: 0;
 }
 
 .bb-index-bg {
     margin: 0 100px;
-    padding: 130px 15px 50px;
+    padding: 0px 15px 50px;
 }
 .bb-index-bg .btn2 a{
     color: #292929;
@@ -883,7 +884,7 @@ a{
         font-size: 16px;
      }
      .bb-index-bg {
-        padding: 130px 0px 50px;
+        padding: 0px 0px 50px;
      }
      .platform-tab.nav-tabs .nav-link{
         font-size: 14px;
@@ -1085,7 +1086,7 @@ a{
         margin: 0;
     }
     .bb-index-bg {
-        padding: 100px 0px 50px;
+        padding: 0px 0px 50px;
     }
     .bb-our-work-arrow {
         display: none !important;
