@@ -40,7 +40,7 @@
                                     </div> -->
                                     <a href="index.html"><img src="assets/Images/logo.svg" width="100%"/></a>
                                    <!--  <div class="header_logo">
-                                        <a href=".work/index.html"><img src="assets/Images/logo.svg" width="100%"/></a>
+                                        <a href="index.html"><img src="assets/Images/logo.svg" width="100%"/></a>
                                     </div> -->
                                     <span class="navigation-body-close-button text-danger">✕</span>
                                     
