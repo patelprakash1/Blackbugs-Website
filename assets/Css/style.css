@@ -73,7 +73,7 @@ h3 {
     margin-bottom: 23px;
 }
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 h5 {
      font-weight: 700;
@@ -118,7 +118,7 @@ a{
 }
 .btn-black:hover{
     background: transparent;
-    color: #292929;
+    color: #fff;
     border: 1px solid #292929;
 }
 .btn-form {
@@ -140,7 +140,17 @@ a{
 } */
 .header {
     padding-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    
 }
 .header .nav-item span {
     color: #09C3C3;
@@ -187,9 +197,18 @@ a{
 /* Index */
 
 .index-page .header {
-    position: unset;
+/*    position: unset;
+    left: 0;
+    right: 0;*/
+    position: sticky;
+    background-color: #fff;
     left: 0;
     right: 0;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
 }
 
 .bb-index-bg {
@@ -248,7 +267,24 @@ a{
 }
 
 .b-sm-title{font-size: 20px; color: #292929; font-weight: 600;}
-
+/*extra clss*/
+span.b-sm-titles {
+    font-size: 28px;
+    font-weight: 600;
+}
+span.b-sm-title.d-block.my-3 {
+    font-size: 20px;
+}
+section.sc_experience.aos-init.aos-animate {
+    padding: 60px 40px;
+}
+/*end of*/
+span.ct-b-sm-title {
+    font-size: 20px;
+    font-size: 20px;
+    color: #292929;
+    font-weight: 600;
+}
 .dev-explore-ar{
     width: 45px;
     height: 45px;
@@ -268,7 +304,8 @@ a{
     border-right: 1px solid #131313;
 }
 .b-expe-s .b-expe-ch{
-    padding: 0 55px;
+    /*padding: 0 55px;*/
+    padding: 0 46px;
 }
 .platform-tab.nav-tabs .nav-item.show .nav-link, .platform-tab.nav-tabs .nav-link.active {
     color: #09C3C3;
@@ -312,6 +349,7 @@ a{
     padding: 20px;
     background: #F5F5F5;
     border-radius: 20px;
+    
 }
 .testimonial-item p{
     font-size: 18px;
@@ -390,6 +428,9 @@ a{
 }
 
 /* career details */
+.sc_executive .box_executive a:hover{
+color: #fff;
+}
 .sc_business {
     padding-top: 90px;
 }
@@ -613,7 +654,8 @@ a{
     margin-top: 30px;
 }
 .sc_our {
-    padding-top: 80px;
+    /*padding-top: 80px;*/
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 
@@ -679,7 +721,7 @@ a{
 
 .footer {  
     background-color: #131313;
-    padding: 50px 0px;
+    padding: 50px 20px;
  }
  .footer p{
     margin-bottom: 10px;
@@ -859,7 +901,8 @@ a{
     }
     .header .navbar ul li a.nav-link {
         margin-right: 12px;
-        font-size: 12px;
+        font-size: 14px;
+        /*font-size: 12px;*/
     }
     /* career details */
     .sc_business{
@@ -907,7 +950,8 @@ a{
         font-size: 40px;
     }
     h2 {
-        font-size: 35px;
+        font-size: 30px;
+        padding-top: 20px;
     }
     .header_btn{
         display: none;
@@ -967,8 +1011,9 @@ a{
 }
 .header {
     padding-top: 20px;
-    padding-bottom: 50px;
-}
+    padding-bottom: 20px;
+    /*padding-bottom: 50px;
+*/}
 .header .navbar .navmenu .mobile-menu {
     display: block;
 }
@@ -1280,8 +1325,9 @@ a{
         font-size: 22px;
     }
     h4 {
-        font-size: 18px;
-    }
+        font-size: 26px;
+/*        font-size: 18px;
+*/    }
     h5 {
         font-size: 16px;
     }
@@ -1289,7 +1335,7 @@ a{
         font-size: 16px;
     }
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .header .header_logo {
@@ -1358,7 +1404,7 @@ a{
     }
 
     .b-sm-title {
-        font-size: 12px;
+        font-size: 18px;
     }
     .p-tb-space .box_space {
         padding: 0;
