@@ -1,26 +1,4 @@
 
-
-/* @font-face {
-    font-family: 'Creato Display'; 
-    src: url("../Font/CreatoDisplay-Light.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Creato Display'; 
-    src: url("../Font/CreatoDisplay-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Creato Display Bold'; 
-    src: url("../Font/CreatoDisplay-Bold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Creato Display Medium'; 
-    src: url("../Font/CreatoDisplay-Medium.otf") format("opentype");
-} */
-
-
 @font-face {
     font-family: 'Montserrat'; 
     src: url("../Font/Montserrat-Light.ttf") format("opentype");
@@ -41,6 +19,18 @@
     src: url("../Font/Montserrat-Medium.ttf") format("opentype");
 }
 
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --primary-green: #09C3C3;
+    --white: #fff;
+    --black: #292929;
+  }
+  
+
 .container-medium {
     max-width: 1500px;
 }
@@ -49,7 +39,7 @@ body {
      font-family: 'Montserrat'; 
     font-weight: 400;
     font-style: normal;
-    color:  #292929;
+    color:  var(--black);
 }
 h1 {
     font-weight: 700;
@@ -64,7 +54,7 @@ h2 {
 h4 {
      font-weight: 700;
     font-size: 28px;
-    color: #292929;
+    color: var(--black);
     margin-bottom: 26px;
 }
 h3 {
@@ -94,32 +84,32 @@ a{
 } */
 
 .btn {
-    background: #09C3C3;
+    background: var(--primary-green);
     padding: 10px 25px;
-    color: #fff;
+    color: var(--white);
     border-radius: 50px;
     font-size: 16px;
 }
 .btn:hover {
-    background: #292929 !important;
-    color: #fff;
+    background: var(--black) !important;
+    color: var(--white);
     transition: all 0.5s ;
 }
 .btn:focus {
-    background: #09C3C3;
-    color: #fff;
-    border: 1px solid #09C3C3;
+    background: var(--primary-green);
+    color: var(--white);
+    border: 1px solid var(--primary-green);
 }
 
 .btn-black {
-    border: 1px solid #292929;
-    color: #292929;
+    border: 1px solid var(--black);
+    color: var(--black);
     background-color: transparent;
 }
 .btn-black:hover{
     background: transparent;
-    color: #fff;
-    border: 1px solid #292929;
+    color: var(--white);
+    border: 1px solid var(--black);
 }
 .btn-form {
     padding: 15px 80px;
@@ -142,7 +132,10 @@ a{
     padding-top: 20px;
     padding-bottom: 15px;
     position: sticky;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
     left: 0;
     right: 0;
     top: 0;
@@ -153,7 +146,7 @@ a{
     
 }
 .header .nav-item span {
-    color: #09C3C3;
+    color: var(--primary-green);
 }
 .header .header_logo {
     width: 205px;
@@ -163,15 +156,15 @@ a{
     margin-right: 0;
 }
 .header .header_btn a {
-    color: #fff;
+    color: var(--white);
 }
 .header .navbar a.nav-link.active {
-    color: #09C3C3 !important;
+    color: var(--primary-green) !important;
     text-decoration: underline !important;
     text-underline-offset: 5px;
 }
 .header .navbar ul li a.nav-link {
-    color: #292929;
+    color: var(--black);
     padding: 0;
     margin-right: 32px;
     font-size: 18px;
@@ -189,17 +182,17 @@ a{
     display: none;
 }
 .header .mobile-menu img{
-    filter: invert(1);
+    filter: contrast(0);
 }
 .header .mobile-menu li a{
-    color: #fff;
+    color: var(--white);
 }
 /* Index */
 
-.index-page .header {
-/*    position: unset;
+/* .index-page .header { 
+  position: unset;
     left: 0;
-    right: 0;*/
+    right: 0;
     position: sticky;
     background-color: rgba(255, 255, 255, 0.70);
     backdrop-filter: blur(10px);
@@ -211,17 +204,17 @@ a{
     box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
     
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
-}
+} */
 
 .bb-index-bg {
     margin: 0 100px;
     padding: 0px 15px 50px;
 }
 .bb-index-bg .btn2 a{
-    color: #292929;
+    color: var(--black);
 }
 .bb-index-bg .btn a {
-    color: #fff;
+    color: var(--white);
 }
 .bb-subtitle{
     font-size: 20px;
@@ -229,24 +222,24 @@ a{
     color: #6A6A6A;
 }
 .th-color {
-    color: #09C3C3;
+    color: var(--primary-green);
 }
 
 .btn2 {
-    background: #fff;
+    background: var(--white);
     padding: 10px 25px;
-    color: #292929;
-    border: 1px solid #292929;
+    color: var(--black);
+    border: 1px solid var(--black);
     border-radius: 50px;
     font-size: 16px;
+    transition: all 0.3s ease-in-out;
 }
 .btn2:hover {
-    background: #09C3C3;
-    border-color: #09C3C3;
+    background: var(--black);   
     
 }
-.btn2:hover a{
-    color: #fff;
+.btn2:hover {
+    color: var(--white);
 }
 
 .underline {
@@ -268,7 +261,7 @@ a{
     justify-content: center;
 }
 
-.b-sm-title{font-size: 20px; color: #292929; font-weight: 600;}
+.b-sm-title{font-size: 20px; color: var(--black); font-weight: 600;}
 /*extra clss*/
 span.b-sm-titles {
     font-size: 28px;
@@ -284,14 +277,14 @@ section.sc_experience.aos-init.aos-animate {
 span.ct-b-sm-title {
     font-size: 20px;
     font-size: 20px;
-    color: #292929;
+    color: var(--black);
     font-weight: 600;
 }
 .dev-explore-ar{
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: #292929;
+    background: var(--black);
 }
 .dev-divid{
     width: 70%;
@@ -310,9 +303,9 @@ span.ct-b-sm-title {
     padding: 0 46px;
 }
 .platform-tab.nav-tabs .nav-item.show .nav-link, .platform-tab.nav-tabs .nav-link.active {
-    color: #09C3C3;
+    color: var(--primary-green);
     border: 0;
-    border-bottom: 2px solid #09C3C3;
+    border-bottom: 2px solid var(--primary-green);
 }
 .platform-tab.nav-tabs{
     width: max-content;
@@ -342,7 +335,7 @@ span.ct-b-sm-title {
 }
 .our-ct-img-box{
     padding: 15px;
-    background: #292929;
+    background: var(--black);
     border-radius: 12px;
     margin-left: 10px;
     margin-right: 10px;    
@@ -367,7 +360,7 @@ span.ct-b-sm-title {
     font-size: 0;
     width: 10px;
     height: 10px;
-    color: #292929;
+    color: var(--black);
     background: #000;
     border-radius: 25px;
     border: none;
@@ -384,8 +377,13 @@ span.ct-b-sm-title {
 }
 .filter-grayscale{
     filter: grayscale(1);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out ;
 }
-    
+.filter-grayscale:hover{
+    filter: grayscale(0);
+    scale: 1.1;
+}
 
 /* Team */
 .sc_team {
@@ -431,7 +429,7 @@ span.ct-b-sm-title {
 
 /* career details */
 .sc_executive .box_executive a:hover{
-color: #fff;
+color: var(--white);
 }
 .sc_business {
     padding-top: 90px;
@@ -475,7 +473,7 @@ color: #fff;
     border-radius: 66px;
     font-size: 18px;
     padding: 10px 20px;
-    color: #fff;
+    color: var(--white);
     border: none;
     margin-right: 30px;
 }
@@ -489,7 +487,7 @@ color: #fff;
 }   
 
 .sc_form .experience, .sc_contact_form .experience{
-    border: 2px solid #09C3C3;
+    border: 2px solid var(--primary-green);
     padding: 10px 20px;
     border-radius: 66px;
     font-size: 18px;
@@ -530,7 +528,7 @@ color: #fff;
     padding: 30px;
 }
 .sc_executive .box_executive a{
-    color: #292929; 
+    color: var(--black); 
 }
 .sc_executive p{
     color: #000000;
@@ -615,7 +613,7 @@ color: #fff;
     padding-top: 85px;
 }
 .sc_technology h1 span{
-    color: #09C3C3;
+    color: var(--primary-green);
 }   
 .sc_ideas {
     padding-top: 150px;
@@ -625,7 +623,7 @@ color: #fff;
     justify-content: center;
 }
 .sc_ideas h2 span{
-    color: #09C3C3;
+    color: var(--primary-green);
 }
 .sc_ideas p {
     font-size: 18px;
@@ -635,7 +633,7 @@ color: #fff;
     color: #6A6A6A;
 }
 .sc_trust h2 {
-    color: #09C3C3;
+    color: var(--primary-green);
 }
 .sc_trust h4{
     color: #131313;
@@ -649,7 +647,7 @@ color: #fff;
     color: #6A6A6A;
 }
 .sc_experience h2 span{
-    color: #09C3C3;
+    color: var(--primary-green);
 }
 .sc_experience h4 {
     margin-bottom : 10px;
@@ -692,7 +690,7 @@ color: #fff;
 }
 .sc_work .portfolio_sec p {
     font-size: 18px;
-    color: #292929;
+    color: var(--black);
 }
 .sc_work .pagination {
     display: inline-block;
@@ -732,7 +730,7 @@ color: #fff;
     margin-top: 18px;
  }
  .footer a, .footer p {
-    color: #fff;
+    color: var(--white);
     font-size: 16px;
 }
 .footer a:hover{
@@ -761,10 +759,10 @@ color: #fff;
 
 .cus-checkbox {
   position: relative;
-  padding: 8px 20px;
+  padding: 8px 15px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -789,7 +787,7 @@ color: #fff;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 25px;
   border: 2px solid #6A6A6A;
 
@@ -803,8 +801,8 @@ color: #fff;
 /* When the checkbox is checked, add a blue background */
 .cus-checkbox input:checked ~ .checkmark {
   background: rgba(9, 196, 196, 0.1);
-  border: 2px solid #09C3C3;
-  color: #fff;
+  border: 2px solid var(--primary-green);
+  color: var(--white);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -814,7 +812,7 @@ color: #fff;
   display: none;
 }
 .cus-checkbox input:checked + span{
-    color: #fff;
+    color: var(--white);
 }
 
 /* Show the checkmark when checked */
@@ -962,7 +960,7 @@ color: #fff;
     }
      .navbar .navbar-toggler{
         padding: 4px 8px;
-        background-color: #fff;
+        background-color: var(--white);
     }
     .navbar .navbar-toggler:focus{
         box-shadow: none;
@@ -980,7 +978,7 @@ color: #fff;
     left: -100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #292929;
+    background-color: var(--black);
     z-index: 20000;
     transition: left .8s cubic-bezier(.1,.1,.1,.1),right .8s cubic-bezier(.1,.1,.1,.1);
     width: 100%;
@@ -989,7 +987,7 @@ color: #fff;
     color: #a7a6a6 !important;
 }
 .navbar .navmenu.active .top-em-link a.text-white{
-    color: #fff!important;
+    color: var(--white)!important;
 }
  .navbar .navmenu.active{
     left: 0;
@@ -1048,11 +1046,11 @@ color: #fff;
         padding: 5px 15px;
         width: 100%;
         margin-right: 0;
-        color: #fff !important;
+        color: var(--white) !important;
         /*border-bottom: 1px solid #09C4C4;*/
     }
     .header .nav-item span {
-        color: #fff;
+        color: var(--white);
     }
     /* career details */
     .sc_form label {
@@ -1070,7 +1068,7 @@ color: #fff;
         align-items: baseline;
     }
     .sc_contactother .contact_box {
-        padding: 20px;
+        padding: 10px;
     }
     .sc_contactother p.contact-text {
         font-size: 18px;
