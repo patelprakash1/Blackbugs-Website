@@ -1154,7 +1154,7 @@ color: var(--white);
         display: none;
     }
     .platform-col {
-        width: 33%;
+        width: 50%;
         padding: 0 15px;
     }
     .platform-tab.nav-tabs{
@@ -1414,7 +1414,7 @@ color: var(--white);
     }
 
     .b-sm-title {
-        font-size: 18px;
+        font-size: 16px;
     }
     .p-tb-space .box_space {
         padding: 0;
