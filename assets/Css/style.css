@@ -450,8 +450,17 @@ color: var(--white);
     color: #6A6A6A;
     margin-bottom: 20px;
 }
+.sc_responsibility .container .row{ 
+    padding-bottom: 30px;
+}
+.sc_responsibility .container .row .bg{
+    background-color: #F7F7F9;
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid #e8e8e8;
+}
 .sc_form{
-    padding-top: 130px;
+    padding-top: 50px;
     padding-bottom: 150px;
 }
 .sc_form input {
@@ -486,7 +495,12 @@ color: var(--white);
 .sc_form input#myFile {
     border: none;
 }   
-
+.sc_contact_form form input:focus{
+  outline: none !important;
+}
+.sc_form form input:focus {
+  outline: none !important;  
+}
 .sc_form .experience, .sc_contact_form .experience{
     border: 2px solid var(--primary-green);
     padding: 10px 20px;
