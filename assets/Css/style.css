@@ -31,6 +31,7 @@ html {
   }
   
 
+  
 .container-medium {
     max-width: 1500px;
 }
@@ -972,7 +973,7 @@ color: var(--white);
  
 
     .navbar .navmenu {
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: -100%;
