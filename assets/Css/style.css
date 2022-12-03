@@ -1348,9 +1348,9 @@ color: var(--white);
         margin-top: 20px;
     }
     
-    /* .header .header_logo {
-        width: 150px;
-    }     */
+    .header .header_logo {
+        width: 170px;
+    }     
      .btn-form {
         padding: 10px 20px;
     }
